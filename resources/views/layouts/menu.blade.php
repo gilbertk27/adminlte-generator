@@ -22,11 +22,18 @@
     </a>
 </li>
 
-<li class="nav-item">
+<!-- <li class="nav-item">
     <a class="navbar-brand" href="https://img.icons8.com/color/344/test-account.png">
         <div class="logo-image">
                 <img src="https://img.icons8.com/color/344/test-account.png" class="img-fluid">
         </div>
+    </a>
+</li> -->
+
+<li class="nav-item">
+    <a href="{{ route('userLists.index') }}"
+       class="nav-link {{ Request::is('userLists*') ? 'active' : '' }}">
+        <p>User Lists</p>
     </a>
 </li>
 

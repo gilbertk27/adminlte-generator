@@ -36,3 +36,5 @@ Route::resource('posts', App\Http\Controllers\PostsController::class);
 
 
 Route::resource('authors', App\Http\Controllers\AuthorsController::class);
+
+Route::resource('userLists', App\Http\Controllers\UserListController::class);
