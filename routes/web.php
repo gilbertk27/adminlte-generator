@@ -29,3 +29,6 @@ Route::resource('users', 'UserController')->middleware('auth');
 
 
 Route::resource('user2s', App\Http\Controllers\User2Controller::class);
+
+
+Route::resource('user123s', App\Http\Controllers\User123Controller::class);
