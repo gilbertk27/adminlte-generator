@@ -12,22 +12,10 @@
         "inView": false
     },
     {
-        "name": "author_id",
-        "dbType": "integer,false",
-        "htmlType": null,
-        "validations": "required|integer|integer",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
-        "name": "title",
-        "dbType": "string,255",
+        "name": "first_name",
+        "dbType": "string,50",
         "htmlType": "text",
-        "validations": "required|string|max:255|string|max:255",
+        "validations": "required|string|max:50|string|max:50",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -36,10 +24,10 @@
         "inView": true
     },
     {
-        "name": "description",
-        "dbType": "string,500",
+        "name": "last_name",
+        "dbType": "string,50",
         "htmlType": "text",
-        "validations": "required|string|max:500|string|max:500",
+        "validations": "required|string|max:50|string|max:50",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -48,10 +36,10 @@
         "inView": true
     },
     {
-        "name": "content",
-        "dbType": "text,65535",
-        "htmlType": "textarea",
-        "validations": "required|string|string",
+        "name": "email",
+        "dbType": "string,100",
+        "htmlType": "text",
+        "validations": "required|string|max:100|string|max:100",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -60,8 +48,20 @@
         "inView": true
     },
     {
-        "name": "date",
+        "name": "birthdate",
         "dbType": "date",
+        "htmlType": "date",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "added",
+        "dbType": "datetime",
         "htmlType": "date",
         "validations": "required",
         "searchable": true,

@@ -2,24 +2,26 @@
 
 namespace App\Repositories;
 
-use App\Models\User123;
+use App\Models\Posts;
 use App\Repositories\BaseRepository;
 
 /**
- * Class User123Repository
+ * Class PostsRepository
  * @package App\Repositories
- * @version October 25, 2022, 5:08 pm UTC
+ * @version October 25, 2022, 5:49 pm UTC
 */
 
-class User123Repository extends BaseRepository
+class PostsRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'name',
-        'email',
-        'password'
+        'author_id',
+        'title',
+        'description',
+        'content',
+        'date'
     ];
 
     /**
@@ -37,6 +39,6 @@ class User123Repository extends BaseRepository
      **/
     public function model()
     {
-        return User123::class;
+        return Posts::class;
     }
 }

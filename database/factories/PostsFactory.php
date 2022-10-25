@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\User123;
+use App\Models\Posts;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class User123Factory extends Factory
+class PostsFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = User123::class;
+    protected $model = Posts::class;
 
     /**
      * Define the model's default state.
@@ -22,11 +22,11 @@ class User123Factory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->word,
-        'email' => $this->faker->word,
-        'password' => $this->faker->word,
-        'created_at' => $this->faker->date('Y-m-d H:i:s'),
-        'updated_at' => $this->faker->date('Y-m-d H:i:s')
+            'author_id' => $this->faker->randomDigitNotNull,
+        'title' => $this->faker->word,
+        'description' => $this->faker->word,
+        'content' => $this->faker->text,
+        'date' => $this->faker->word
         ];
     }
 }

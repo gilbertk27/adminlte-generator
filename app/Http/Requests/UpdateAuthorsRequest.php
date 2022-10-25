@@ -3,9 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\User123;
+use App\Models\Authors;
 
-class UpdateUser123Request extends FormRequest
+class UpdateAuthorsRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,7 @@ class UpdateUser123Request extends FormRequest
      */
     public function rules()
     {
-        $rules = User123::$rules;
+        $rules = Authors::$rules;
         
         return $rules;
     }

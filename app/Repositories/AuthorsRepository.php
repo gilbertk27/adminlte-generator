@@ -2,26 +2,26 @@
 
 namespace App\Repositories;
 
-use App\Models\User2;
+use App\Models\Authors;
 use App\Repositories\BaseRepository;
 
 /**
- * Class User2Repository
+ * Class AuthorsRepository
  * @package App\Repositories
- * @version October 25, 2022, 4:58 pm UTC
+ * @version October 25, 2022, 6:09 pm UTC
 */
 
-class User2Repository extends BaseRepository
+class AuthorsRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'name',
+        'first_name',
+        'last_name',
         'email',
-        'email_verified_at',
-        'password',
-        'remember_token'
+        'birthdate',
+        'added'
     ];
 
     /**
@@ -39,6 +39,6 @@ class User2Repository extends BaseRepository
      **/
     public function model()
     {
-        return User2::class;
+        return Authors::class;
     }
 }

@@ -28,7 +28,11 @@ Route::resource('categories', App\Http\Controllers\CategoryController::class);
 Route::resource('users', 'UserController')->middleware('auth');
 
 
-Route::resource('user2s', App\Http\Controllers\User2Controller::class);
 
 
-Route::resource('user123s', App\Http\Controllers\User123Controller::class);
+
+
+Route::resource('posts', App\Http\Controllers\PostsController::class);
+
+
+Route::resource('authors', App\Http\Controllers\AuthorsController::class);
